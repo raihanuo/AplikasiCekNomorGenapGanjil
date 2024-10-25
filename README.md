@@ -32,7 +32,9 @@ Cek Angka adalah aplikasi berbasis Java yang memungkinkan pengguna untuk memerik
 - Mudah dikembangkan dan dimodifikasi sesuai kebutuhan.
 
 ## Screenshot
-_Akan ditambahkan nanti_
+![4](https://github.com/user-attachments/assets/5c10a8a4-02c6-4098-9e20-d1e4e816cd35)
+![4_](https://github.com/user-attachments/assets/4c2dd4e3-fbdc-43c8-863d-6eb6b4824df8)
+
 
 ## Cara Menjalankan Program
 1. Pastikan Anda memiliki **Java Development Kit (JDK)** terinstal di sistem Anda.
