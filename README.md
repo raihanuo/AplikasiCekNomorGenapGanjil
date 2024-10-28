@@ -1,6 +1,6 @@
 # Aplikasi Cek Nomor Genap / Ganjil
 
-Cek Angka adalah aplikasi berbasis Java yang memungkinkan pengguna untuk memeriksa apakah suatu angka merupakan bilangan genap atau ganjil, serta menentukan apakah angka tersebut adalah bilangan prima.
+Aplikasi ini adalah program Java berbasis GUI yang memungkinkan pengguna untuk memeriksa apakah suatu angka merupakan bilangan genap atau ganjil, serta menentukan apakah angka tersebut adalah bilangan prima.
 
 ## Identitas
 - Nama  : Muhammad Raihan
@@ -8,22 +8,19 @@ Cek Angka adalah aplikasi berbasis Java yang memungkinkan pengguna untuk memerik
 - Kelas : 5B NonReg Banjarmasin
 
 ## Fitur
-- Memasukkan angka untuk pengecekan.
-- Menampilkan apakah angka tersebut genap atau ganjil.
-- Menentukan apakah angka tersebut merupakan bilangan prima.
-- Validasi input untuk memastikan hanya angka yang dapat dimasukkan.
-- Pesan kesalahan yang informatif untuk pengalaman pengguna yang lebih baik.
-- 
+- **Input Angka**: Pengguna dapat memasukkan angka untuk di cek.
+- **Validasi Input**: Program memvalidasi input agar hanya menerima angka. Jika pengguna memasukkan karakter yang tidak valid, akan muncul pesan kesalahan.
+- **Hasil Otomatis**: Setelah pengguna menekan tombol "Cek Angka", hasil pengecekan akan langsung ditampilkan di label dan dialog pop-up.
+
+
 ## Cara Menggunakan
-1. Jalankan aplikasi.
-2. Masukkan angka yang ingin diperiksa pada kolom yang disediakan.
-3. Klik tombol "Cek Angka".
-4. Hasil akan ditampilkan di label dan dialog pop-up yang menunjukkan apakah angka tersebut genap atau ganjil, serta apakah angka tersebut prima atau tidak.
+1. Masukkan angka yang ingin diperiksa pada kolom yang disediakan.
+2. Klik tombol "Cek Angka".
+3. Hasil akan ditampilkan di label dan dialog pop-up yang menunjukkan apakah angka tersebut genap atau ganjil, serta apakah angka tersebut prima atau tidak.
 
 ## Teknologi yang Digunakan
-- **Bahasa Pemrograman**: Java
-- **Library GUI**: Swing
-- **IDE**: NetBeans (atau IDE pilihan Anda)
+- **Java**: Bahasa pemrograman untuk mengembangkan aplikasi.
+- **Swing**: Framework GUI untuk membangun antarmuka pengguna.
 
 ## Keunggulan
 - Antarmuka pengguna yang sederhana dan intuitif.
