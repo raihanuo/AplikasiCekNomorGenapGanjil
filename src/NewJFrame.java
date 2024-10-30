@@ -1,11 +1,10 @@
-
-import javax.swing.JOptionPane;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -124,30 +123,38 @@ public class NewJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void buttonCekActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCekActionPerformed
+        // Mengecek apakah textFieldAngka kosong
         if (textFieldAngka.getText().isEmpty()) {
+            // Menampilkan pesan jika tidak ada input
             JOptionPane.showMessageDialog(this, "Masukkan angka terlebih dahulu!");
         } else {
+            // Mengambil angka dari textFieldAngka dan mengonversinya menjadi integer
             int angka = Integer.parseInt(textFieldAngka.getText());
             String ganjilGenap;
 
+            // Mengecek apakah angka genap atau ganjil
             if (angka % 2 == 0) {
                 ganjilGenap = " Merupakan Angka Genap.";
             } else {
                 ganjilGenap = " Merupakan Angka Ganjil.";
             }
 
+            // Memeriksa apakah angka adalah bilangan prima
             boolean adalahPrima = cekPrima(angka);
             String statusPrima;
 
+            // Menentukan status prima berdasarkan hasil cekPrima
             if (adalahPrima) {
                 statusPrima = " Adalah Bilangan Prima.";
             } else {
                 statusPrima = " Bukan Bilangan Prima.";
             }
 
+            // Menggabungkan pesan hasil pemeriksaan
             String pesan1 = angka + ganjilGenap,
-                pesan2 = angka + statusPrima;
+                   pesan2 = angka + statusPrima;
 
+            // Menampilkan hasil ke label dan dialog
             labelHasil1.setText(pesan1);
             labelHasil2.setText(pesan2);
             JOptionPane.showMessageDialog(this, pesan1 + "\n" + pesan2);
@@ -155,21 +162,29 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonCekActionPerformed
 
     private void textFieldAngkaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_textFieldAngkaKeyTyped
+        // Mengambil karakter yang dimasukkan
         char c = evt.getKeyChar();
+        // Memastikan hanya angka dan backspace yang dapat dimasukkan
         if (!Character.isDigit(c) && c != java.awt.event.KeyEvent.VK_BACK_SPACE) {
+            // Menampilkan pesan error jika karakter tidak valid
             JOptionPane.showMessageDialog(this, "Hanya bisa memasukkan angka!", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_textFieldAngkaKeyTyped
 
     private void textFieldAngkaFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_textFieldAngkaFocusGained
+        // Menghapus teks di textFieldAngka saat fokus didapat
         textFieldAngka.setText("");
     }//GEN-LAST:event_textFieldAngkaFocusGained
 
     private boolean cekPrima(int number) {
+        // Bilangan prima harus lebih besar dari 1
         if (number <= 1) return false;
+        // Memeriksa faktor dari 2 hingga akar kuadrat dari angka
         for (int i = 2; i <= Math.sqrt(number); i++) {
+            // Jika angka habis dibagi i, berarti bukan prima
             if (number % i == 0) return false;
         }
+        // Jika tidak ditemukan faktor, angka adalah prima
         return true;
     }
     
